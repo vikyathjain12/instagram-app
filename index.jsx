@@ -1,23 +1,14 @@
-import Crousel from './Crousel'
-import LoginForm from './LoginForm'
-import Grid from '@mui/material/Unstable_Grid2';
-
-
-function index() {
-  return (
-    <>
-    {/*<h2>Login Page</h2>*/}
-    <Grid container >
-      <Grid xs={12}>
-    <Crousel></Crousel>
-    </Grid>
-    <Grid xs={15}>
-    <LoginForm></LoginForm>
-    </Grid>
-    </Grid>
-   </>
-      )
- 
+import React from 'react'
+import NavBar from './NavBar'
+import "./feed.css"
+import UploadReels from './UploadReels'
+function Feed() {
+    return (
+     <div className='feed_container'>
+            {/* <h1>Feeds</h1> */}
+            <NavBar></NavBar>
+            <UploadReels></UploadReels>
+     </div>
+    )
 }
-
-export default index
+export default Feed
